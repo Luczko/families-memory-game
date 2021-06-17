@@ -1,0 +1,20 @@
+<div
+  class="card"
+  (click)="clickedCard.emit()"
+  [style.visibility]="card.state === 'matched' ? 'hidden' : 'visible'"
+>
+  <div
+    class="back-side"
+    [style.display]="card.state === 'back' ? 'block' : 'none'"
+  >
+    <img
+      src="https://wallcolors.pl/51702-superlarge_default/watercolor-flowers-wallpaper.jpg"
+    />
+  </div>
+  <div
+    class="front-side"
+    [style.display]="card.state === 'front' ? 'block' : 'none'"
+  >
+    <img [src]="card.image" [alt]="card.image" />
+  </div>
+</div>
