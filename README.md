@@ -1,27 +1,25 @@
-# MemoryGame
+# Memory Game - find all the famillies!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+Projekt front-endowy - gra pamięciowa z kartami przedstawiającymi zwierzęce rodzinki. W ilu ruchach uda Ci się znaleźć wszystkie pary?
 
-## Development server
+Front-end project - memory game with animal families. How many moves do You need to reveal all matching pairs?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Funkcjonalności / Funkcjonalities
 
-## Code scaffolding
+Klaszyczna gra pamięciowa polegająca na odkrywaniu kart na przemian. Obecnie w grze jest 10 kart. Na końcu pojawia się informacja w ilu ruchach udało nam się ukończyć grę oraz przycisk pozwalający na jej reset. W przygotowaniu są:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- większa ilośc kart,
+- odkrycie wszystkich kart na początku gry na określony czas wraz z zegarem.
 
-## Build
+Classic memory game about revealing cards and find matching pairs. Currently game contains 10 cards. When finished info with number of moves and reset button show up. Coming soon:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- number of cards increased,
+- all the cards showed up at the beginning of the game with timer, to let You memorize their positions.
 
-## Running unit tests
+## Development info
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This project was generated with Angular CLI version 11.2.1.
 
-## Running end-to-end tests
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Have fun, and check my other projects!
