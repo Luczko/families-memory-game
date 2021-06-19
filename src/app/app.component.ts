@@ -9,10 +9,18 @@ import { SingleCard } from './singleCard';
 export class AppComponent implements OnInit {
   title = 'memory-game';
 
-  cardImages = ['img1', 'img2', 'img3', 'img4', 'img5'];
+  cardImages = [
+    'assets/images/img1.jpg',
+    'assets/images/img2.jpg',
+    'assets/images/img3.jpg',
+    'assets/images/img4.jpg',
+    'assets/images/img5.jpg',
+  ];
 
   cards: SingleCard[] = [];
   turnedCards: SingleCard[] = [];
+  numberOfMoves = 0;
+  clicksToFinish = 0;
 
   ngOnInit(): void {
     this.setupGame();
@@ -37,10 +45,14 @@ export class AppComponent implements OnInit {
     });
 
     this.cards = this.shuffleDeck(this.cards);
+    this.clicksToFinish = 0;
+    this.numberOfMoves = 0;
   }
 
   clickedCard(index: number): void {
     const selectedCard = this.cards[index];
+    this.numberOfMoves++;
+    console.log(this.numberOfMoves);
 
     if (selectedCard.state === 'back' && this.turnedCards.length < 2) {
       selectedCard.state = 'front';
@@ -60,6 +72,7 @@ export class AppComponent implements OnInit {
       const cardOne = this.turnedCards[0];
       const cardTwo = this.turnedCards[1];
       const nextState = cardOne.image === cardTwo.image ? 'matched' : 'back';
+      nextState === 'matched' ? this.clicksToFinish++ : null;
       cardOne.state = cardTwo.state = nextState;
 
       this.turnedCards = [];

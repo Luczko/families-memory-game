@@ -1,6 +1,8 @@
-<mat-toolbar color="primary" class="text-center"> Rodzinki </mat-toolbar>
+<mat-toolbar color="accent" class="text-center">
+  Animal Families - Memory Game
+</mat-toolbar>
 <div>
-  <p class="text-center">Zacznij grę</p>
+  <p class="text-center">Choose Your first card and try to find a pair!</p>
   <div class="grid">
     <app-game-card
       *ngFor="let card of cards; let id = index"
@@ -8,5 +10,12 @@
       (clickedCard)="clickedCard(id)"
     >
     </app-game-card>
+  </div>
+  <div class="finish" [hidden]="clicksToFinish !== cardImages.length">
+    <p>
+      Congratulations! You have finished the game with
+      {{ numberOfMoves / 2 }} moves.
+    </p>
+    <button (click)="setupGame()">Try one more time!</button>
   </div>
 </div>
