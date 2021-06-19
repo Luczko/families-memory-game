@@ -9,7 +9,7 @@ Front-end project - memory game with animal families. How many moves do You need
 Klaszyczna gra pamięciowa polegająca na odkrywaniu kart na przemian. Obecnie w grze jest 10 kart. Na końcu pojawia się informacja w ilu ruchach udało nam się ukończyć grę oraz przycisk pozwalający na jej reset. W przygotowaniu są:
 
 - większa ilośc kart,
-- odkrycie wszystkich kart na początku gry na określony czas wraz z zegarem.
+- odkrycie wszystkich kart na początku gry na określony czas wraz z zegarem odmierzjącym czas na zapamiętanie ich pozycji.
 
 Classic memory game about revealing cards and find matching pairs. Currently game contains 10 cards. When finished info with number of moves and reset button show up. Coming soon:
 

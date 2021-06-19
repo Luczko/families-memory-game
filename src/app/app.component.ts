@@ -52,7 +52,6 @@ export class AppComponent implements OnInit {
   clickedCard(index: number): void {
     const selectedCard = this.cards[index];
     this.numberOfMoves++;
-    console.log(this.numberOfMoves);
 
     if (selectedCard.state === 'back' && this.turnedCards.length < 2) {
       selectedCard.state = 'front';
