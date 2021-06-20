@@ -2,10 +2,10 @@
   Animal Families - Memory Game
 </mat-toolbar>
 <div>
-  <p class="text-center" [hidden]="clicksToFinish == cardImages.length">
+  <p class="text-center" *ngIf="clicksToFinish !== cardImages.length">
     Choose Your first card and try to find a pair!
   </p>
-  <div class="finish" [hidden]="clicksToFinish !== cardImages.length">
+  <div class="finish" *ngIf="clicksToFinish == cardImages.length">
     <p>
       Congratulations! You have finished the game with
       {{ numberOfMoves / 2 }} moves.

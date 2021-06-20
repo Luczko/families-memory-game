@@ -11,7 +11,7 @@ Klaszyczna gra pamięciowa polegająca na odkrywaniu kart na przemian. Obecnie w
 - większa ilośc kart,
 - odkrycie wszystkich kart na początku gry na określony czas wraz z zegarem odmierzjącym czas na zapamiętanie ich pozycji.
 
-Classic memory game about revealing cards and find matching pairs. Currently game contains 10 cards. When finished info with number of moves and reset button show up. Coming soon:
+Classic memory game about revealing cards and finding matching pairs. Currently game contains 10 cards. When finished info with number of moves and reset button show up. Coming soon:
 
 - number of cards increased,
 - all the cards showed up at the beginning of the game with timer, to let You memorize their positions.
