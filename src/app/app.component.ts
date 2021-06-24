@@ -15,6 +15,10 @@ export class AppComponent implements OnInit {
     'assets/images/img3.jpg',
     'assets/images/img4.jpg',
     'assets/images/img5.jpg',
+    'assets/images/img6.jpg',
+    'assets/images/img7.jpg',
+    'assets/images/img8.jpg',
+    'assets/images/img9.jpg',
   ];
 
   cards: SingleCard[] = [];
@@ -51,7 +55,6 @@ export class AppComponent implements OnInit {
 
   clickedCard(index: number): void {
     const selectedCard = this.cards[index];
-    this.numberOfMoves++;
 
     if (selectedCard.state === 'back' && this.turnedCards.length < 2) {
       selectedCard.state = 'front';
@@ -59,10 +62,12 @@ export class AppComponent implements OnInit {
 
       if (this.turnedCards.length === 2) {
         this.checkIfMatching();
+        this.numberOfMoves = this.numberOfMoves + 2;
       }
     } else if (selectedCard.state === 'front') {
       selectedCard.state = 'back';
       this.turnedCards.pop();
+      this.numberOfMoves = this.numberOfMoves + 2;
     }
   }
 
