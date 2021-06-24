@@ -32,7 +32,7 @@ class GameCardComponent {
     ngOnInit() { }
 }
 GameCardComponent.ɵfac = function GameCardComponent_Factory(t) { return new (t || GameCardComponent)(); };
-GameCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: GameCardComponent, selectors: [["app-game-card"]], inputs: { card: "card" }, outputs: { clickedCard: "clickedCard" }, decls: 5, vars: 8, consts: [[1, "card", 3, "click"], [1, "back-side"], ["src", "../../assets/images/back.jpg"], [1, "front-side"], [3, "src", "alt"]], template: function GameCardComponent_Template(rf, ctx) { if (rf & 1) {
+GameCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: GameCardComponent, selectors: [["app-game-card"]], inputs: { card: "card" }, outputs: { clickedCard: "clickedCard" }, decls: 5, vars: 8, consts: [[1, "card", 3, "click"], [1, "back-side"], ["src", "https://unblast.com/wp-content/uploads/2018/08/deszone-amusing-animals-illustration-vector-free-pattern-4-1.jpg"], [1, "front-side"], [3, "src", "alt"]], template: function GameCardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function GameCardComponent_Template_div_click_0_listener() { return ctx.clickedCard.emit(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
